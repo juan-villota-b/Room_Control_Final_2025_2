@@ -122,6 +122,12 @@ openocd -f interface/stlink.cfg -f target/stm32l4x.cfg \
    30 %, hasta 40 °C al 70 % y por encima al 100 %.
 5. El dashboard recibe `T=…;STATE=…;FAN=…` cada 500 ms.
 
+## Demostración
+
+Video de funcionamiento del sistema y del dashboard en Node-RED:
+
+[Ver demostración en YouTube](https://youtu.be/DbfoEAb-rX4?si=t2fPlXAObiiwzrSR)
+
 ## Documentación
 
 | Documento | Contenido |
