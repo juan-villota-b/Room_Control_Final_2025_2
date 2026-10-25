@@ -1,4 +1,11 @@
-# INFORME DEL SISTEMA DE CONTROL DE SALA  
+# INFORME DEL SISTEMA DE CONTROL DE SALA
+
+> **Documento histórico.** Este es el informe original de la entrega del curso y se
+> conserva sin cambios sustantivos en su contenido técnico. Para la descripción
+> actualizada del repositorio consultar [`../README.md`](../README.md),
+> [`arquitectura.md`](arquitectura.md), [`hardware.md`](hardware.md) y
+> [`protocolo.md`](protocolo.md).
+
 **Placa:** Nucleo STM32L476RG  
 **Conectividad:** ESP-01 por USART3  
 **Sensado:** NTC por ADC  
@@ -271,7 +278,7 @@ Se transforma el valor crudo del ADC (0-4095) a voltaje real mediante el cálcul
 - Señales PWM capturadas  
 - Interfaz OLED  
 - Conexión ESP01 – Nucleo  
-![Diagrama de flujo](![Diagrama](ROOM_CONTROL_FINAL_2025_2/img1.png))
+![Diagrama de flujo del firmware](images/firmware-flow.png)
 
 ---
 

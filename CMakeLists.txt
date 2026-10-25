@@ -19,7 +19,7 @@ if(NOT CMAKE_BUILD_TYPE)
 endif()
 
 # Set the project name
-set(CMAKE_PROJECT_NAME Room_Control_Final_2025_1)
+set(CMAKE_PROJECT_NAME Room_Control_Final_2025_2)
 
 
 # Enable compile command to ease indexing with e.g. clangd
@@ -45,22 +45,24 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
 
 # Add sources to executable
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
-    Drivers/LED/led.c
+    Drivers/led/led.c
     Drivers/ring_buffer/ring_buffer.c
     Drivers/ssd1306/ssd1306.c
     Drivers/ssd1306/ssd1306_fonts.c
     Drivers/keypad/keypad.c
-    Core/Src/room_control.c
-    Core/Src/sensor.c
+    App/Src/room_control.c
+    Drivers/ntc/sensor.c
     # Add user sources here
 )
 
 # Add include paths
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
-    Drivers/LED
+    Drivers/led
     Drivers/ring_buffer
     Drivers/ssd1306
     Drivers/keypad
+    Drivers/ntc
+    App/Inc
     # Add user defined include paths
 )
 
